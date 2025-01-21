@@ -18,26 +18,28 @@ if (computer == you):
     print("Draw !!!")
 
 else :
-    if(computer == -1 and you == 1):
+     if((computer - you) == -1 or (computer - you) == 2):
+        print("You Lose !!!") 
+     else:   
         print("You Won !!!")
 
-    elif(computer == -1 and you == 0):
-        print("You Lose !!!")
+    # if(computer == -1 and you == 1): (computer - you) = -2
+    #     print("You Won !!!")
 
-    elif(computer == 1 and you == -1):
-        print("You Won !!!")
+    # elif(computer == -1 and you == 0): (computer - you) = -1
+    #     print("You Lose !!!")
 
-    elif(computer == 1 and you == 0):
-        print("You LOse !!!")
+    # elif(computer == 1 and you == -1): (computer - you) = 2
+    #     print("You Won !!!")
 
-    elif(computer == 0 and you == 1):
-        print("You Won !!!")
+    # elif(computer == 1 and you == 0): (computer - you) = 1
+    #     print("You Lose !!!")
 
-    elif(computer == 0 and you == -1):
-        print("You Lose !!!")
+    # elif(computer == 0 and you == 1): (computer - you) = 1
+    #     print("You Won !!!")
 
-    else:
-        print("sommething went wrong!!")
+    # elif(computer == 0 and you == -1) (computer - you) = -1
+    #     print("You Lose !!!")
 
-   
-
+    # else:
+    #     print("something went wrong!!")
